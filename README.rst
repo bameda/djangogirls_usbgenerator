@@ -14,8 +14,8 @@ You can choose to download everything or skip some parts. You can choose as many
 - Django Girls tutorial
 - Bootstrap
 - Lobster font
-- Python 3.5.2
-- Django 1.10
+- Python 3.6.2
+- Django 1.11
 - Sublime Text 2
 - Atom 64bits
 
