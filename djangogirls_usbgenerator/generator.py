@@ -22,7 +22,7 @@ except NameError:
     FileExistsError = Exception
 
 
-BOOTSTRAP_DOWNLOAD_PAGE = 'https://getbootstrap.com/getting-started'
+BOOTSTRAP_DOWNLOAD_PAGE = 'https://getbootstrap.com/docs/3.3/getting-started/'
 SUBLIME_DOWNLOAD_PAGE = 'https://www.sublimetext.com/2'
 ATOM_DOWNLOAD_PAGE = 'https://github.com/atom/atom/releases/latest'
 ATOM_DOWLOAD_URL = 'https://github.com/atom/atom/releases/download/v{version}/{platform}'
@@ -138,17 +138,17 @@ def lobster():
 
 
 def python():
-    download_file("https://www.python.org/ftp/python/3.5.2/python-3.5.2.exe", "downloads/")
+    download_file("https://www.python.org/ftp/python/3.6.2/python-3.6.2.exe", "downloads/")
     print("Python for Windows 32bits downloaded.")
-    download_file("https://www.python.org/ftp/python/3.5.2/python-3.5.2-amd64.exe", "downloads/")
+    download_file("https://www.python.org/ftp/python/3.6.2/python-3.6.2-amd64.exe", "downloads/")
     print("Python for Windows 64bits downloaded.")
-    download_file("https://www.python.org/ftp/python/3.5.2/python-3.5.2-macosx10.6.pkg", "downloads/")
+    download_file("https://www.python.org/ftp/python/3.6.2/python-3.6.2-macosx10.6.pkg", "downloads/")
     print("Python for Mac downloaded.")
 
 
 def django():
     create_directory()
-    subprocess.check_call(['pip', 'install', 'django~=1.10', '--download', 'downloads'])
+    subprocess.check_call(['pip', 'install', 'django~=1.11', '--download', 'downloads'])
     print("Django downloaded.")
 
 
